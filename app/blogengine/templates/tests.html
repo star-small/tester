@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html><html><head><meta charset="utf-8"/>
 
   
@@ -15,19 +16,20 @@
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css"/>
 
   <!-- bootstrap core css -->
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+  <link rel="stylesheet" type="text/css" href="{%static 'css/bootstrap.css'%}"/>
 
   <!-- fonts style -->
   <link href="https://fonts.googleapis.com/css?family=Dosis:400,500|Poppins:400,700&amp;display=swap" rel="stylesheet"/>
   <!-- Custom styles for this template -->
-  <link href="css/style.css" rel="stylesheet"/>
+  <link href="{%static 'css/style.css'%}" rel="stylesheet"/>
+  <link href="{%static 'css/testpage.css'%}" rel="stylesheet"/>
   <!-- responsive style -->
-  <link href="css/responsive.css" rel="stylesheet"/>
+  <link href="{%static 'css/responsive.css'%}" rel="stylesheet"/>
 </head>
 
-<body class="sub_page">
-  <div class="hero_area">
-    <!-- header section strats -->
+
+<body>
+
     <header class="header_section">
       <div class="container-fluid">
         <div class="row">
@@ -48,18 +50,24 @@
                     <li class="nav-item active">
                       <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                     </li>
+
+                  
+
                     <li class="nav-item">
-                      <a class="nav-link" href="about.html">About </a>
+                      <a class="nav-link" href="#about">About </a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="service.html">Services </a>
+                      <a class="nav-link" href="#contact">Contact</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="contact.html">Contact</a>
+                      <a class="nav-link" href="service.html">Tests</a>
                     </li>
                     <li class="nav-item">
+                      <a class="nav-link" href="contact.html">Crete Test</a>
+                    </li>
+                    <!-- <li class="nav-item">
                       <a class="nav-link" href="#"> Login</a>
-                    </li>
+                    </li> -->
                   </ul>
                   <form class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
                     <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
@@ -70,323 +78,56 @@
           </div>
         </div>
       </div>
-    </header>
-    <!-- end header section -->
-  </div>
+      <title>Creative Colorlib SignUp Form</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+      <!-- Custom Theme files -->
+      <link href="//fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i" rel="stylesheet">
+</header>
+<!-- main -->
 
-  <!-- service section -->
-
-  <section class="service_section">
-    <div class="container">
-      <div class="custom_heading-container">
-        <h2>
-          Our Services
-        </h2>
-      </div>
-      <div class="service_container layout_padding2">
-        <div class="service_box">
-          <div class="img-box">
-            <img src="images/s-1.jpg" alt=""/>
-          </div>
-          <div class="detail-box">
-            <h4>
-              Business <br/>
-              Consultant
-            </h4>
-            <p>
-              have suffered alteration in some form, by injected humour, or randomised words which don&#39;t look even
-              slightly believable. If you are
-            </p>
-          </div>
+<div class="main-w3layouts wrapper">
+  <h1>Creative SignUp Form</h1>
+  <div class="main-agileinfo">
+    <div class="agileits-top">
+      <form action="#" method="post">
+        <input class="text" type="text" name="Username" placeholder="Username" required="">
+        <input class="text email" type="email" name="email" placeholder="Email" required="">
+        <input class="text" type="password" name="password" placeholder="Password" required="">
+        <input class="text w3lpass" type="password" name="password" placeholder="Confirm Password" required="">
+        <div class="wthree-text">
+          <label class="anim">
+            <input type="checkbox" class="checkbox" required="">
+            <span>I Agree To The Terms & Conditions</span>
+          </label>
+          <div class="clear"> </div>
         </div>
-        <div class="service_box">
-          <div class="img-box">
-            <img src="images/s-2.jpg" alt=""/>
-          </div>
-          <div class="detail-box">
-            <h4>
-              Marketing <br/>
-              Analytics
-            </h4>
-            <p>
-              have suffered alteration in some form, by injected humour, or randomised words which don&#39;t look even
-              slightly believable. If you are
-            </p>
-          </div>
-        </div>
-        <div class="service_box">
-          <div class="img-box">
-            <img src="images/s-3.jpg" alt=""/>
-          </div>
-          <div class="detail-box">
-            <h4>
-              Financial <br/>
-              Planning
-            </h4>
-            <p>
-              have suffered alteration in some form, by injected humour, or randomised words which don&#39;t look even
-              slightly believable. If you are
-            </p>
-          </div>
-        </div>
-      </div>
-      <div>
-        <a href="">
-          Read More
-        </a>
-      </div>
+        <input type="submit" value="SIGNUP">
+      </form>
+      <p>Don't have an Account? <a href="#"> Login Now!</a></p>
     </div>
-  </section>
-
-  <!-- end service section -->
-
-  <div class="footer_bg">
-    <!-- info section -->
-    <section class="info_section layout_padding2-bottom">
-      <div class="container">
-        <h3 class="">
-          BigWing
-        </h3>
-      </div>
-      <div class="container info_content">
-
-        <div>
-          <div class="row">
-            <div class="col-md-6 col-lg-4">
-              <div class="d-flex">
-                <h5>
-                  Useful Link
-                </h5>
-              </div>
-              <div class="d-flex ">
-                <ul>
-                  <li>
-                    <a href="">
-                      About Us
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      About services
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      About Departments
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      Services
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      Contact Us
-                    </a>
-                  </li>
-                </ul>
-                <ul class="ml-3 ml-md-5">
-                  <li>
-                    <a href="">
-                      Loram ipusm
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      Loram ipusm
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      Loram ipusm
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      Loram ipusm
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      Loram ipusm
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-              <div class="d-flex">
-                <h5>
-                  The Services
-                </h5>
-              </div>
-              <div class="d-flex ">
-                <ul>
-                  <li>
-                    <a href="">
-                      About Us
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      About services
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      About Departments
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      Services
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      Contact Us
-                    </a>
-                  </li>
-                </ul>
-                <ul class="ml-3 ml-md-5">
-                  <li>
-                    <a href="">
-                      Lorem ipsum dolor
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      sit amet, consectetur
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      adipiscing elit,
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      sed do eiusmod
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      tempor incididunt
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-              <div class="d-flex">
-                <h5>
-                  Contact Us
-                </h5>
-              </div>
-              <div class="d-flex ">
-                <ul>
-                  <li>
-                    <a href="">
-                      About Us
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      About services
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      About Departments
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      Services
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      Contact Us
-                    </a>
-                  </li>
-                </ul>
-                <ul class="ml-3 ml-md-5">
-                  <li>
-                    <a href="">
-                      Lorem ipsum
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      dolor sit amet,
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      consectetur
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      adipiscing
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      elit, sed do eiusmod
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center align-items-lg-baseline">
-          <div class="social-box">
-            <a href="">
-              <img src="images/fb.png" alt=""/>
-            </a>
-
-            <a href="">
-              <img src="images/twitter.png" alt=""/>
-            </a>
-            <a href="">
-              <img src="images/linkedin1.png" alt=""/>
-            </a>
-            <a href="">
-              <img src="images/instagram1.png" alt=""/>
-            </a>
-          </div>
-          <div class="form_container mt-5">
-            <form action="">
-              <label for="subscribeMail">
-                Newsletter
-              </label>
-              <input type="email" placeholder="Enter Your email" id="subscribeMail"/>
-              <button type="submit">
-                Subscribe
-              </button>
-            </form>
-          </div>
-        </div>
-      </div>
-
-    </section>
-
-    <!-- end info_section -->
-    <!-- footer section -->
-    <section class="container-fluid footer_section">
-      <p>
-        © 2019 All Rights Reserved By
-        <a href="https://html.design/">Free Html Templates</a>
-      </p>
-    </section>
-    <!-- footer section -->
   </div>
 
+  <ul class="colorlib-bubbles">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+</div>
+  
 
-  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-  <script type="text/javascript" src="js/bootstrap.js"></script>
+
+  <script type="text/javascript" src="{%static 'js/jquery-3.4.1.min.js'%}"></script>
+  <script type="text/javascript" src="{%static 'js/bootstrap.js'%}"></script>
+
+
+
 </body></html>
