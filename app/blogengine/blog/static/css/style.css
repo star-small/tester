@@ -141,7 +141,7 @@ a:focus {
 }
 
 .navbar-brand span {
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 700;
   color: #f9fcfb;
   margin-top: 5px;
@@ -596,6 +596,7 @@ a:focus {
   margin-top: 35px;
   font-size: 15px;
 }
+
 
 .contact_section button:hover {
   -webkit-transform: translateY(-7px);
