@@ -358,6 +358,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   .wrapper {
     position: relative;
     overflow: hidden;
+    margin-bottom: 50px;
   }
   
   .colorlib-bubbles {
@@ -377,11 +378,11 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     height: 40px;
     background-color: rgba(255, 255, 255, 0.15);
     bottom: -160px;
-    -webkit-animation: square 20s infinite;
-    -moz-animation: square 250s infinite;
-    -o-animation: square 20s infinite;
-    -ms-animation: square 20s infinite;
-    animation: square 20s infinite;
+    -webkit-animation: square 12s infinite;
+    -moz-animation: square 12s infinite;
+    -o-animation: square 12s infinite;
+    -ms-animation: square 12s infinite;
+    animation: square 8s infinite;
     -webkit-transition-timing-function: linear;
     -moz-transition-timing-function: linear;
     -o-transition-timing-function: linear;
@@ -577,6 +578,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     }
   
     .main-w3layouts {
+      margin-bottom: 40px;
       padding: 2em 0 1em;
     }
   }
