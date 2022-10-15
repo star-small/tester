@@ -1,0 +1,623 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+
+{% block hero %}
+<div class="hero_area">
+{% endblock %}
+
+{% block content %}
+ <!-- header section strats -->
+
+  <!-- end header section -->
+  <!-- slider section -->
+  <section class=" slider_section ">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">01</li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1">02</li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2">03</li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-5 col-md-6">
+                <div class="slider_detail-box">
+                  <h1>
+                    Начните <br/>
+                    Создовать <br/>
+                    Тесты
+                  </h1>
+                  <p>
+                    Tester — это бесплатный интернет сервис, который позволяет создавать тесты.
+                  </p>
+                  <div class="btn-box">
+                    <a href="" class="btn-1">
+                      Подробнее
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="slider_img-box">
+                   <img src="{%static 'images/slider-img.png'%}" alt=""/>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-5 col-md-6">
+                <div class="slider_detail-box">
+                  <h1>
+                    Начните <br/>
+                    Создовать <br/>
+                    Тесты
+                  </h1>
+                  <p>
+                    Вы можете создавать онлайн тесты как и проходить чужые .
+                  </p>
+                  <div class="btn-box">
+                    <a href="" class="btn-1">
+                      Подробнее
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="slider_img-box">
+                  <img src="{%static 'images/slider-img.png'%}" alt=""/>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-5 col-md-6">
+                <div class="slider_detail-box">
+                  <h1>
+                    Начните <br/>
+                    Создовать <br/>
+                    Тесты
+                  </h1>
+                  <p>
+                    И для этого Вам не нужно устанавливать на компьютер дополнительные программы.
+                  </p>
+                  <div class="btn-box">
+                    <a href="" class="btn-1">
+                      Подробнее
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="slider_img-box">
+                  <img src="{%static 'images/slider-img.png'%}" alt=""/>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a name="about"></a>
+      <div class="carousel_btn-container">
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="sr-only">Next</span>
+        </a>
+        
+      </div>
+    </div>
+  </section>
+  <!-- end slider section -->
+</div>
+
+<!-- welcome section -->
+<section class="welcome_section layout_padding">
+  
+  <div class="container">
+    <div class="custom_heading-container">
+      <h2>
+        Добро пожаловать
+      </h2>
+    </div>
+    <div class="layout_padding2">
+      <div class="img-box">
+        <img src="{%static 'images/welcome.png'$}" alt=""/>
+      </div>
+      <div class="detail-box">
+        <p>
+          Мы — образовательный сервис. 
+          На страницах нашего сайта нет информации, которая будет отвлекать от прохождения теста. 
+          Основная идея нашей программы — проводить интерактивное тестирование знаний студентов и учеников.
+          Другие виды онлайн тестов тоже можно создавать в нашем сервисе, 
+          но мы ориентируемся в первую очередь на потребности педагогов.
+        </p>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="service_section">
+  <div class="container">
+    <div class="custom_heading-container">
+      <h2>
+        Кому ?
+      </h2>
+    </div>
+    <div class="service_container layout_padding2">
+      <div class="service_box">
+        <div class="img-box">
+          <img src="{%static 'images/s-1.jpg'%}" alt=""/>
+        </div>
+        <div class="detail-box">
+          <h4>
+            Учителя
+          </h4>
+          <p>
+            Создавайте тесты для оценивания знаний учеников и коллег.
+          </p>
+        </div>
+      </div>
+      <div class="service_box">
+        <div class="img-box">
+          <img src="{%static 'images/s-2.jpg'%}" alt=""/>
+        </div>
+        <div class="detail-box">
+          <h4>
+             Студентам
+          </h4>
+          <p>
+           Проходите тесты дня оттачивания и закрепления материалов.
+          </p>
+        </div>
+      </div>
+      <div class="service_box">
+        <div class="img-box">
+          <img src="{%static 'images/s-3.jpg'%}" alt=""/>
+        </div>
+        <div class="detail-box">
+          <h4>
+            Работникам
+          </h4>
+          <p>
+            Создавайте тесты для оценивания знаний сотрудников и коллег.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div>
+      <a href="">
+        Начать
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- end service section -->
+<!--problem section -->
+<section class="problem_section layout_padding">
+  <div class="container">
+    <div class="custom_heading-container">
+      <h2 >
+        <a>Сложности ?</a>
+      </h2>
+    </div>
+    <div class="layout_padding2">
+      <div class="img-box">
+        <img src="{%static 'images/problem.jpg'%}" alt=""/>
+      </div>
+      <div class="detail-box">
+        <p>
+          При возникновении проблем или ошибок млжете связаться с нами мв обязательно поможем.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- end problem section -->
+<!-- why section -->
+
+<section class="why_section layout_padding">
+  <div class="container">
+    <div class="custom_heading-container">
+      <h2>
+        Пому мы ?
+      </h2>
+    </div>
+    <div class="content-container">
+      <p>
+        Мы лучшая платформа для создания и прохождения тестов.
+      </p>
+      <div class="row">
+        <div class="col-md-3 col-sm-6">
+          <div class="img-box">
+            <img src="{%static 'images/smiley.png'%}" alt=""/>
+          </div>
+          <div class="detail-box">
+            <h3>
+              99%
+            </h3>
+            <h6>
+              Довольных пользователей
+            </h6>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="img-box">
+            <img src="{%static 'images/monitor.png'%}" alt=""/>
+          </div>
+          <div class="detail-box">
+            <h3>
+              4700+
+            </h3>
+            <h6>
+              Посещений
+            </h6>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="img-box">
+            <img src="{%static 'images/multiple-users-silhouette.png'%}" alt=""/>
+          </div>
+          <div class="detail-box">
+            <h3>
+              4500+
+            </h3>
+            <h6>
+              пользователей
+            </h6>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="img-box">
+            <img src="{%static 'images/bar-chart.png'%}" alt=""/>
+          </div>
+          <div class="detail-box">
+            <h3>
+              1
+            </h3>
+            <h6>
+              Первое место по качеству 
+            </h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- end why section -->
+
+<!-- client section -->
+<section class="client_section layout_padding">
+  <div class="container">
+    <h2>
+      Комментарий
+    </h2>
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="client_container layout_padding2">
+            <div class="client_text">
+              <p>
+                Много лет преподаю математику и техническую механику в техникуме.
+
+                Разумеется, преимущества тестирования не нуждаются в рекламе. 
+                Но мои неоднократные  попытки использовать этот инструмент в прежние года доставляли больше сложностей, 
+                чем удовлетворения. Так было до знакомства
+              </p>
+            </div>
+            <div class="detail-box">
+              <div class="img-box">
+                <img src="{%static 'images/client.png'%}" alt=""/>
+              </div>
+              <div class="name">
+                <h5>
+                  Егорова Ольга Алексеевна
+                </h5>
+                <p>
+                  преподаватель высшей категории, ГБПОУ ЛО
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="client_container layout_padding2">
+            <div class="client_text">
+              <p>
+                В связи с переводом студентов ВУЗов на дистанционное обучение встал вопрос о быстром и 
+                качественном развертывании СДО. Наша кафедра решила развернуть СДО самостоятельно и находкой для нас 
+                явилась система Tester. Несмотря на некоторые шероховатости, с нашей точки зрения, она лучшая по соотношению "цена-качество-удобство". 
+                Идеального ничего нет, но СДОиТ Tester близка к нему. 
+              </p>
+            </div>
+            <div class="detail-box">
+              <div class="img-box">
+                <img src="{%static 'images/client.png'%}" alt=""/>
+              </div>
+              <div class="name">
+                <h5>
+                  Клыков Алексей Игоревич 
+                </h5>
+                <p>
+                  Старший преподаватель ФГБОУ ВО СГМУ 
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="client_container layout_padding2">
+            <div class="client_text">
+              <p>
+                В связи со сложившейся эпидемиологической обстановкой школы России перешли в 4 четверти 2019-2020 учебного года на дистанционное обучение. 
+                Многие учителя столкнулись с проблемой обратной связи при дистанционном взаимодействии с учащимися. 
+                Возникли вопросы о том, каким образом дети смогут пересылать выполненные задания своим педагогам. 
+                С такой проблемой столкнулась и я. И для меня настоящей находкой стал сервис Tester! 
+                Создать тест на этой платформе даже мне, 
+                не слишком продвинутому пользователю, оказалось очень просто.
+              </p>
+            </div>
+            <div class="detail-box">
+              <div class="img-box">
+                <img src="{%static 'images/client.png'%}" alt=""/>
+              </div>
+              <div class="name">
+                <h5>
+                  Тананко Надежда Викторовна 
+                </h5>
+                <p>
+                  учитель МАОУ СОШ № 102
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+  </div>
+</section>
+<!-- end client section -->
+<!-- contact section -->
+<section class="contact_section layout_padding">
+  <div class="container contact_heading">
+    <h2>
+      Контакты
+    </h2>
+  </div>
+  <div class="container">
+    <form>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputName4">Имя</label>
+          <input type="text" class="form-control" id="inputName4"/>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputEmail4">Фамилия</label>
+          <input type="text" class="form-control" id="inputEmail4"/>
+        </div>
+
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputNumber4">Номер</label>
+          <input type="tel" class="form-control" id="inputNumber4"/>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputNumber4">Город</label>
+          <input type="tel" class="form-control" id="inputNumber4"/>
+        </div>
+
+      </div>
+      <div class="form-group">
+        <label for="inputMessage">Послание</label>
+        <input type="text" class="form-control" id="inputMessage" placeholder=""/>
+      </div>
+  </div>
+
+  <div class="d-flex justify-content-center">
+    <button type="submit" class="">Отправить</button>
+  </div>
+  </form>
+  
+</section>
+
+
+<!-- end contact section -->
+<div class="footer_bg">
+  <!-- info section -->
+  <section class="info_section layout_padding2-bottom">
+    <div class="container">
+      <h3 class="" >
+        <a name="contact">Tester</a>
+      </h3>
+    </div>
+    <div class="container info_content">
+
+      <div>
+        <div class="row">
+          <div class="col-md-6 col-lg-4">
+            <div class="d-flex">
+              <h5>
+                Useful Link
+              </h5>
+            </div>
+            <div class="d-flex ">
+              <ul>
+                <li>
+                  <a href="">
+                    About Us
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    About services
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    About Departments
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    Services
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    Contact Us
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="d-flex">
+              <h5>
+                The Services
+              </h5>
+            </div>
+            <div class="d-flex ">
+              <ul>
+                <li>
+                  <a href="">
+                    About Us
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    About services
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    About Departments
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    Services
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    Contact Us
+                  </a>
+                </li>
+              </ul>
+
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="d-flex">
+              <h5>
+                Contact Us
+              </h5>
+            </div>
+            <div class="d-flex ">
+              <ul>
+                <li>
+                  <a href="">
+                    About Us
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    About services
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    About Departments
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    Services
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    Contact Us
+                  </a>
+                </li>
+              </ul>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center align-items-lg-baseline">
+        <div class="social-box">
+          <a href="">
+            <img src="{%static 'images/fb.png'%}" alt=""/>
+          </a>
+
+          <a href="">
+            <img src="{%static 'images/twitter.png'%}" alt=""/>
+          </a>
+          <a href="">
+            <img src="{%static 'images/linkedin1.png'%}" alt=""/>
+          </a>
+          <a href="">
+            <img src="{%static 'images/instagram1.png%'}" alt=""/>
+          </a>
+        </div>
+        <div class="form_container mt-5">
+          <form action="">
+            <label for="subscribeMail">
+              Newsletter
+            </label>
+            <input type="email" placeholder="Enter Your email" id="subscribeMail"/>
+            <button type="submit">
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- end info_section -->
+
+  <!-- footer section -->
+  <section class="container-fluid footer_section">
+    <p>
+      © 2019 All Rights Reserved By
+      <a href="https://html.design/">Free Html Templates</a>
+    </p>
+  </section>
+  <!-- footer section -->
+</div>
+
+
+<script type="text/javascript" src="{%static 'js/jquery-3.4.1.min.js'%}"></script>
+<script type="text/javascript" src="{%static 'js/bootstrap.js'%}"></script>
+
+
+
+</body></html>
+{% endblock %}
