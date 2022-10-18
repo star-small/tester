@@ -3,9 +3,12 @@ from django.db import models
 # Create your models here.
 class Question(models.Model):
     text = models.CharField(verbose_name='Текст', max_length=250)
-    num_right = models.IntegerField(verbose_name='Кол-во правильных ответов')
+    question_num = models.IntegerField(default=1, unique=True)
     def __str__(self):
         return f"{self.text}"
+
+
+
     class Meta:
         verbose_name = 'Вопрос'
         verbose_name_plural = 'Вопросы'

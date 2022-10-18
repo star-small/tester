@@ -9,17 +9,29 @@
 
 {% block content %}
 <div class="main-w3layouts wrapper">
-    <h1>Вопрос</h1>
+    <h1>Вопрос {{question_id}}</h1>
     <div class="main-agileinfo">
       <div class="agileits-top">
-        <form action="{% url 'get_test_info_page' %}" method="POST">
+        <form action="/test/questions/{{question_id|add:1}}/{{test_id}}" method="POST">
           {% csrf_token %}
-          
-          <input class="text" type="text" name="theme_name" placeholder="Введите вопрос">
-          <input class="text" type="text" name="test_name" placeholder="ответ">
-          <input type="submit" value="Добавать вопросы">
+
+          <div class="answerBlog">
+            <input class="text" type="text" name="question" placeholder="Введите вопрос"> 
+            <div class="answerline">
+              <input class="text" type="text" name="answers" placeholder="ответ"><input class="radio"  type="checkbox" name="right_position" value="0" id="radioButton">
+            </div>
+            <div class="answerline">
+              <input class="text" type="text" name="answers" placeholder="ответ"><input class="radio" type="checkbox" name="right_position" value="1" id="radioButton">
+            </div>
+            <div class="answerline">
+              <input class="text" type="text" name="answers" placeholder="ответ"><input class="radio" type="checkbox" name="right_position" value="2" id="radioButton">
+            </div>
+          </div>
+          <input type="submit" value="Добавить вопросы">
           
         </form>
+        <button class="addQuestions">Добавить ещё ответ</button>
+
       </div>
     </div>
   
@@ -199,6 +211,7 @@
   </div>
     <script type="text/javascript" src="{%static 'js/jquery-3.4.1.min.js'%}"></script>
     <script type="text/javascript" src="{%static 'js/bootstrap.js'%}"></script>
+    <script type="text/javascript" src="{%static 'js/questions.js'%}"></script>
   
   
   

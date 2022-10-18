@@ -5,7 +5,9 @@ def show_home_page(request):
     return render(request,'frontend/home.html')
 
 def show_signIn(request):
-    return render(request,'frontend/singIn.html')
+    #login
+    return render(request,'frontend/signIn.html')
 
 def show_signUp(request):
-    return render(request,'frontend/singUp.html')
+    #registration
+    return render(request,'frontend/signUp.html')
