@@ -1,3 +1,0 @@
-.\Scripts\activate
-cd C:\Users\User\Desktop\prog\python\firstblog\app\blogengine
-python manage.py runserver 5000
