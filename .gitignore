@@ -2,3 +2,4 @@
 .idea
 app/.idea
 venv/
+.jshintrc
